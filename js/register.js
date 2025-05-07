@@ -15,46 +15,54 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (form) {
         // Real-time validation
-        form.email.addEventListener('blur', () => {
+        const validateEmail = () => {
             const result = testEmailFormat(form.email.value.trim());
-            if (!result.isValid) {
-                showFieldError(result.field, result.message);
-            }
-        });
+            result.isValid ? clearFieldError('email') : showFieldError(result.field, result.message);
+        };
 
-        form.password.addEventListener('blur', () => {
+        const validatePassword = () => {
             const result = testPassword(form.password.value);
-            if (!result.isValid) {
-                showFieldError(result.field, result.message);
+            result.isValid ? clearFieldError('password') : showFieldError(result.field, result.message);
+            // Validate confirm password if it has value
+            if (form.confirmPassword.value) {
+                validateConfirmPassword();
             }
-        });
+        };
 
-        form.confirmPassword.addEventListener('blur', () => {
+        const validateConfirmPassword = () => {
             const result = testPasswordMatch(form.password.value, form.confirmPassword.value);
-            if (!result.isValid) {
-                showFieldError(result.field, result.message);
-            }
-        });
+            result.isValid ? clearFieldError('confirmPassword') : showFieldError(result.field, result.message);
+        };
 
-        form.phone.addEventListener('blur', () => {
+        const validatePhone = () => {
             const result = testPhone(form.phone.value.trim());
-            if (!result.isValid) {
-                showFieldError(result.field, result.message);
-            }
-        });
+            result.isValid ? clearFieldError('phone') : showFieldError(result.field, result.message);
+        };
 
-        form.firstName.addEventListener('blur', () => {
+        const validateFirstName = () => {
             const result = testName(form.firstName.value.trim(), 'firstName');
-            if (!result.isValid) {
-                showFieldError(result.field, result.message);
-            }
-        });
+            result.isValid ? clearFieldError('firstName') : showFieldError(result.field, result.message);
+        };
 
-        form.lastName.addEventListener('blur', () => {
+        const validateLastName = () => {
             const result = testName(form.lastName.value.trim(), 'lastName');
-            if (!result.isValid) {
-                showFieldError(result.field, result.message);
-            }
+            result.isValid ? clearFieldError('lastName') : showFieldError(result.field, result.message);
+        };
+
+        // Add input and blur listeners for all fields
+        ['email', 'password', 'confirmPassword', 'phone', 'firstName', 'lastName'].forEach(field => {
+            const input = form[field];
+            const validateFunction = {
+                email: validateEmail,
+                password: validatePassword,
+                confirmPassword: validateConfirmPassword,
+                phone: validatePhone,
+                firstName: validateFirstName,
+                lastName: validateLastName
+            }[field];
+
+            input.addEventListener('input', validateFunction);
+            input.addEventListener('blur', validateFunction);
         });
 
         // Form submission

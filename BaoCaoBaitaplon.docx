@@ -1,0 +1,175 @@
+Báo cáo đề tài HỆ THỐNG CÔNG NGHỆ WEB
+
+ĐỀ TÀI: WEBSITE BÁN PHỤ KIỆN ĐIỆN THOẠI - PHONEGEAR
+
+NGÀY NỘP: 07/05/2025
+
+CHƯƠNG 1. GIỚI THIỆU ĐỀ TÀI
+
+1.1 Mục Đích
+- Xây dựng một website bán phụ kiện điện thoại trực tuyến, cung cấp nền tảng mua sắm thuận tiện cho người dùng
+- Đối với người dùng: Dễ dàng tìm kiếm, xem thông tin và mua sắm các phụ kiện điện thoại
+- Đối với admin: Quản lý sản phẩm, danh mục và đơn hàng một cách hiệu quả
+
+1.2 Cơ sở lý thuyết và các thông tin kỹ thuật
+
+a) HTML5
+- Sử dụng các thẻ semantic để tạo cấu trúc rõ ràng
+- Áp dụng các form input với validation
+- Responsive design với viewport meta tag
+
+b) CSS3 
+- Flexbox và Grid layout cho bố cục trang web
+- Media queries cho thiết kế responsive
+- CSS Variables cho quản lý màu sắc và theme
+
+c) Bootstrap 5
+- Framework CSS cho phát triển giao diện nhanh chóng
+- Hệ thống Grid 12 cột cho layout responsive
+- Components sẵn có: Navbar, Card, Form, Button,...
+- Utilities classes cho styling nhanh
+
+d) JavaScript
+- Xử lý tương tác người dùng
+- Validation form đăng ký/đăng nhập
+- Quản lý giỏ hàng với LocalStorage
+- Dynamic content loading
+
+e) Font Awesome
+- Thư viện icon đa dạng
+- Tối ưu hiệu suất với CSS loading
+
+CHƯƠNG 2. PHÂN TÍCH ỨNG DỤNG
+
+2.1 Layout
+
+a) Trang chủ (index.html)
+- Header: Logo, thanh navigation, giỏ hàng, nút đăng nhập/đăng ký
+- Banner: Slider giới thiệu sản phẩm
+- Danh mục sản phẩm chính: Ốp lưng, Sạc & Cáp, Kính cường lực, Phụ kiện khác
+- Footer: Thông tin liên hệ, links nhanh
+
+b) Trang sản phẩm (products.html)
+- Tabs danh mục sản phẩm
+- Grid hiển thị sản phẩm
+- Card sản phẩm: Hình ảnh, tên, giá, nút thêm vào giỏ
+
+c) Trang giỏ hàng (cart.html)
+- Bảng sản phẩm đã chọn
+- Cập nhật số lượng
+- Tổng tiền
+- Nút thanh toán
+
+d) Trang đăng nhập (login.html)
+- Form đăng nhập: Email/Username, Password
+- Link đăng ký tài khoản mới
+- Validation realtime
+
+e) Trang đăng ký (register.html)
+- Form đăng ký với các trường:
+  + Họ và tên
+  + Email
+  + Mật khẩu
+  + Xác nhận mật khẩu
+  + Số điện thoại
+- Validation realtime cho tất cả trường
+
+2.2 Sitemap
+
+Hình ảnh dưới đây mô tả cấu trúc và mối quan hệ giữa các trang trong website:
+
+[Xem hình sitemap.png trong thư mục img]
+
+Cấu trúc website bao gồm:
+- Trang chủ (Homepage) là điểm trung tâm
+- Phân nhánh chính gồm:
+  + Sản phẩm (với 4 danh mục con)
+  + Giỏ hàng
+  + Đăng nhập/Đăng ký 
+  + Giới thiệu
+
+Sitemap được thiết kế theo cấu trúc phân cấp rõ ràng, giúp người dùng dễ dàng điều hướng và tiếp cận các chức năng của website.
+
+CHƯƠNG 3. XÂY DỰNG ỨNG DỤNG
+
+3.1 Cấu trúc thư mục
+```
+webPhuKienDienThoai/
+│
+├── css/
+│   ├── bootstrap.min.css
+│   └── styles.css
+│
+├── js/
+│   ├── auth.js
+│   ├── cart.js
+│   ├── products.js
+│   ├── validation.js
+│   └── ...
+│
+├── html/
+│   ├── index.html
+│   ├── products.html
+│   ├── cart.html
+│   └── ...
+│
+└── img/
+    └── [images files]
+```
+
+3.2 Chi tiết triển khai
+
+a) Validation module (validation.js)
+- Validate email format
+- Validate password strength
+- Validate phone number format
+- Validate required fields
+
+b) Shopping cart module (cart.js)
+- Thêm sản phẩm vào giỏ
+- Cập nhật số lượng
+- Xóa sản phẩm
+- Tính tổng tiền
+- Lưu trữ với LocalStorage
+
+c) Product management (products.js)
+- Hiển thị sản phẩm theo danh mục
+- Filter và sort sản phẩm
+- Render product cards
+
+d) Authentication (auth.js)
+- Xử lý đăng ký
+- Xử lý đăng nhập
+- Quản lý phiên người dùng
+
+CHƯƠNG 4. KẾT LUẬN – HƯỚNG PHÁT TRIỂN
+
+4.1 Kết quả đạt được
+- Xây dựng thành công website bán phụ kiện điện thoại 
+- Giao diện responsive, thân thiện người dùng
+- Tích hợp các tính năng cơ bản:
+  + Quản lý giỏ hàng
+  + Đăng ký/đăng nhập
+  + Hiển thị sản phẩm theo danh mục
+  + Form validation
+
+4.2 Hạn chế của ứng dụng web
+- Chưa có backend và cơ sở dữ liệu
+- Chưa có chức năng thanh toán trực tuyến
+- Cần bổ sung thêm các tính năng admin
+- Chưa có tính năng tìm kiếm và lọc sản phẩm
+
+4.3 Hướng phát triển
+- Tích hợp backend với Node.js và MongoDB
+- Thêm tính năng thanh toán online
+- Xây dựng trang admin quản lý sản phẩm và đơn hàng
+- Thêm tính năng tìm kiếm và lọc sản phẩm
+- Tích hợp đánh giá và bình luận sản phẩm
+
+CHƯƠNG 5. TÀI LIỆU THAM KHẢO
+
+5.1 Website
+- Bootstrap - https://getbootstrap.com
+- Font Awesome - https://fontawesome.com
+- W3Schools - https://www.w3schools.com
+- MDN Web Docs - https://developer.mozilla.org

@@ -12,7 +12,7 @@ const products = {
         {
             name: 'Ốp lưng Samsung S24 Ultra',
             price: 350000,
-            image: '../img/op-lung-samsung-galaxy-s25-ultra-silicone-chinh-hang.1.webp',
+            image: '../img/op-lung-samsung-galaxy-s24-ultra-araree-flexield_1_.webp',
             description: 'Silicon chống sốc, bảo vệ camera'
         },
         {
@@ -48,7 +48,7 @@ const products = {
         {
             name: 'Ốp lưng Samsung Z Flip 5',
             price: 420000,
-            image: '../img/op-lung-samsung-galaxy-s25-ultra-silicone-chinh-hang.1.webp',
+            image: '../img/op-lung-samsung-galaxy-s24-ultra-araree-flexield_1_.webp',
             description: 'Thiết kế gập, bảo vệ 2 mặt'
         }
     ],
@@ -106,103 +106,106 @@ const products = {
         {
             name: 'Kính cường lực iPhone 15 Pro Max',
             price: 250000,
-            image: '../img/kinhcuongluc.webp',
+            image: '../img/kinh-cuong-luc-samsung-galaxy-s25-ultra-mipow-premium-full_2_.webp',
             description: 'Độ cứng 9H, chống xước toàn diện'
         },
         {
             name: 'Dán màn hình Samsung S24 Ultra',
             price: 290000,
-            image: '../img/kinhcuongluc.webp',
+            image: '../img/cuongluc.webp',
             description: 'Công nghệ TPU tự liền, chống vân tay'
         },
         {
             name: 'Kính cường lực iPhone 15',
             price: 200000,
-            image: '../img/kinhcuongluc.webp',
+            image: '../img/danchongvadap.webp',
             description: 'Full màn hình, chống nhìn trộm'
         },
         {
             name: 'Dán camera Samsung Z Fold 5',
             price: 150000,
-            image: '../img/kinhcuongluc.webp',
+            image: '../img/bao-da-samsung-galaxy-s24-ultra-thong-minh-1.webp',
             description: 'Bảo vệ camera, chống xước lens'
         },
         {
             name: 'Kính cường lực iPhone 14 Pro',
             price: 220000,
-            image: '../img/kinhcuongluc.webp',
+            image: '../img/kinh-cuong-luc-samsung-galaxy-s25-ultra-mipow-premium-full_2_.webp',
             description: 'Chống va đập, chống dấu vân tay'
         },
         {
             name: 'Dán màn hình Samsung S23',
             price: 280000,
-            image: '../img/kinhcuongluc.webp',
+            image: '../img/cuongluc.webp',
             description: 'Độ trong suốt cao, dễ dán'
         },
         {
             name: 'Kính cường lực iPhone 13',
             price: 180000,
-            image: '../img/kinhcuongluc.webp',
+            image: '../img/danchongvadap.webp',
             description: 'Chống ánh sáng xanh, bảo vệ mắt'
         },
         {
             name: 'Dán full máy Z Flip 5',
             price: 350000,
-            image: '../img/kinhcuongluc.webp',
+            image: '../img/bao-da-samsung-galaxy-s24-ultra-thong-minh-1.webp',
             description: 'Bảo vệ toàn bộ máy, chống trầy'
         }
     ],
     accessories: [
         {
-            name: 'Tai nghe AirPods Pro Gen 3',
-            price: 6990000,
-            image: 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/g/r/group_161_1__1.png',
-            description: 'Chống ồn chủ động, âm thanh 3D'
+            name: 'Hub USB Type-C 11-in-1',
+            price: 990000,
+            image: '../img/hub-chuyen-doi-baseus-spacemate-series-11-in-1-dung-cho-win_1_.webp',
+            description: 'Hub đa năng, hỗ trợ nhiều cổng kết nối'
         },
         {
-            name: 'Galaxy Watch 6 Classic',
-            price: 8990000,
-            image: 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/g/r/group_161_1__1.png',
-            description: 'Vòng xoay bezel, màn hình 1.4 inch'
+            name: 'Hub USB-C to HDMI 4K',
+            price: 590000,
+            image: '../img/hub-chuyen-doi-ugreen-usb-c-to-usb-a-2-0-usb-a-3-0-hdmi-pd-ho-tro-4k-15495_1_.webp',
+            description: 'Hỗ trợ xuất hình ảnh 4K, sạc PD'
         },
         {
-            name: 'Apple Watch Series 9',
-            price: 11990000,
-            image: 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/g/r/group_161_1__1.png',
-            description: 'Chip S9, màn hình Always-On'
+            name: 'Ví da iPhone MagSafe',
+            price: 590000,
+            image: '../img/vi-da-iphone-magsafe.webp',
+            description: 'Bảo vệ thẻ, nam châm MagSafe'
         },
         {
-            name: 'Galaxy Buds 3 Pro',
-            price: 4990000,
-            image: 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/g/r/group_161_1__1.png',
-            description: 'Chống ồn AI, âm thanh 360'
+            name: 'Hub USB 4-in-1',
+            price: 490000,
+            image: '../img/hub4in1.webp',
+            description: 'Mở rộng cổng kết nối, nhỏ gọn'
         },
         {
-            name: 'Apple Pencil Gen 2',
-            price: 3290000,
-            image: 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/g/r/group_161_1__1.png',
-            description: 'Độ nhạy cao, sạc không dây'
+            name: 'Pin dự phòng MagSafe',
+            price: 1290000,
+            image: '../img/pin-du-phong-ugreen-magnetic-pb561-10-000mah-20w.1.webp',
+            description: 'Nam châm MagSafe, sạc nhanh 20W'
         },
         {
-            name: 'S Pen Fold Edition',
-            price: 2990000,
-            image: 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/g/r/group_161_1__1.png',
-            description: 'Thiết kế cho Z Fold, 4096 cấp độ'
+            name: 'Pin dự phòng 20000mAh',
+            price: 990000,
+            image: '../img/pin-sac-du-phong-anker-zolo-a1689-20000mah-30w_1_.webp',
+            description: 'Dung lượng lớn, sạc nhanh 30W'
         },
         {
-            name: 'Magic Keyboard iPad Pro',
-            price: 8990000,
-            image: 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/g/r/group_161_1__1.png',
-            description: 'Bàn phím backlit, trackpad'
+            name: 'Pin Golf 10000mAh',
+            price: 490000,
+            image: '../img/pin-sac-du-phong-golf-g80c-10000mah_3_.webp',
+            description: 'Nhỏ gọn, sạc nhanh 20W' 
         },
         {
-            name: 'Galaxy Tab S9 Keyboard',
-            price: 5990000,
-            image: 'https://cdn2.cellphones.com.vn/358x/media/catalog/product/g/r/group_161_1__1.png',
+            name: 'Hub đa năng 3-in-1',
+            price: 790000,
+            image: '../img/hub-sac-khong-day-da-nang-mophie-universal-3-in-1_1_.webp',
             description: 'Bàn phím rời, chân đế linh hoạt'
         }
     ]
 };
+
+let productModal;
+let currentProduct;
 
 // Create product card HTML
 function createProductCard(product) {
@@ -210,7 +213,7 @@ function createProductCard(product) {
     return `
         <div class="col-md-6 col-lg-3">
             <div class="card product-card h-100" data-product-id="${id}">
-                <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                <img src="${product.image}" class="card-img-top product-image" alt="${product.name}">
                 <div class="card-body">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text text-muted">${product.description}</p>
@@ -220,6 +223,28 @@ function createProductCard(product) {
             </div>
         </div>
     `;
+}
+
+// Hiển thị modal chi tiết sản phẩm
+function showProductDetail(product, productId) {
+    const modal = document.getElementById('productDetailModal');
+    if (!modal) return;
+
+    // Lưu sản phẩm hiện tại
+    currentProduct = {
+        ...product,
+        id: productId
+    };
+
+    // Cập nhật nội dung modal
+    document.getElementById('modalProductImage').src = product.image;
+    document.getElementById('modalProductName').textContent = product.name;
+    document.getElementById('modalProductDescription').textContent = product.description;
+    document.getElementById('modalProductPrice').textContent = `${product.price.toLocaleString('vi-VN')}₫`;
+
+    // Hiển thị modal
+    productModal = new bootstrap.Modal(modal);
+    productModal.show();
 }
 
 // Initialize products page
@@ -236,22 +261,35 @@ function initProductsPage() {
             // Add click event listener to the container for event delegation
             container.addEventListener('click', (e) => {
                 const addToCartBtn = e.target.closest('.add-to-cart');
+                const productImage = e.target.closest('.product-image');
+                const card = e.target.closest('.product-card');
+
+                if (!card) return;
+
+                const productId = card.dataset.productId;
+                const product = {
+                    name: card.querySelector('.card-title').textContent,
+                    price: parseInt(card.querySelector('.text-primary').textContent.replace(/[^\d]/g, '')),
+                    image: card.querySelector('.card-img-top').src,
+                    description: card.querySelector('.card-text').textContent
+                };
+
                 if (addToCartBtn) {
-                    const card = addToCartBtn.closest('.product-card');
-                    const product = {
-                        id: card.dataset.productId,
-                        name: card.querySelector('.card-title').textContent,
-                        price: parseInt(card.querySelector('.text-primary').textContent.replace(/[^\d]/g, '')),
-                        image: card.querySelector('.card-img-top').src
-                    };
-                    addToCart(product);
+                    addToCart({...product, id: productId});
+                } else if (productImage || (!addToCartBtn && e.target.closest('.card-body'))) {
+                    showProductDetail(product, productId);
                 }
             });
         }
     });
 
-    // Initialize cart functionality
-    initCart();
+    // Thêm sự kiện cho nút thêm vào giỏ hàng trong modal
+    document.getElementById('modalAddToCart').addEventListener('click', () => {
+        if (currentProduct) {
+            addToCart(currentProduct);
+            productModal.hide();
+        }
+    });
 }
 
 // Initialize on page load
